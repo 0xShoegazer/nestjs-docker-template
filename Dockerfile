@@ -27,7 +27,7 @@ COPY --from=build /usr/src/app/dist ./dist
 COPY --from=build /usr/src/app/package.json .
 COPY --from=build /usr/src/app/package-lock.json .
 
-# Expose the port on which the app will run
-EXPOSE 3001
+# # Expose the port on which the app will run
+# EXPOSE 3001
 
-CMD [ "npm", "run", "start:prod" ]
+# CMD [ "npm", "run", "start:prod" ]
