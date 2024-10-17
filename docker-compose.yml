@@ -24,7 +24,7 @@ services:
           target: /app
           ignore:
             - node_modules/
-    container_name: routing-api
+    container_name: nest-docker-service
     env_file:
       - ./.env
     ports:
